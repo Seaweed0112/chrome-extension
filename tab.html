@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script type="text/javascript" rel='jquery' src="jquery-3.4.1.js"></script>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <script type="text/javascript" rel="swell-data" src="data.js"></script>
+  <script type="text/javascript" rel='canvas-model' src="canvasjs.min.js"></script>
+  <script type="text/javascript" rel='chart' src='barchart.js'></script>   
+  <script type="text/javascript" rel=background-img src='background.js'></script>
+</head>
+<body>    
+  <img id='fill_screen_image' src='chrome-extension://jpdfodmefjiaknbojfahbfkhhbbmnhpf/000.png' style="z-index:-2;"/> 
+  <div id="search" style="width:700px">
+    <form method="get" action="http://www.google.com//search?q={0}.format(ｑ)" target="_blank" >
+      <input id="google-icon" type="image" src="chrome-extension://jpdfodmefjiaknbojfahbfkhhbbmnhpf/google-icon.png" style="margin-right:15px;margin-bottom:0px"/><input id="searchText" type="text" autocomplete="off" name="q" maxlength="255" value="" placeholder="search..." style="vertical-align:super;height:35px"/><input src="chrome-extension://jpdfodmefjiaknbojfahbfkhhbbmnhpf/bottom_search.png" id="searchBtn" type="image" style="vertical-align:super;"/>     
+  </div> 
+  <div class="wrapper typo">走阿！去
+      <div class="list"><span class="placeholder" id="placeholder">烏石港北堤</span>衝浪！
+      </div>
+  </div>
+
+  <div id='content_container'>
+    <a id ='left-btn' class='main_content'>
+      <img style="width:20px;height:35px;" src='chrome-extension://jpdfodmefjiaknbojfahbfkhhbbmnhpf/bottom_icon_prev.png'/>
+    </a>
+    <div class='main_content' id='chartCard'>
+      <div id="chartContainer"></div>
+    </div>
+    <a id ='right-btn' class='main_content'>
+      <img style="width:20px;height:35px;" src='chrome-extension://jpdfodmefjiaknbojfahbfkhhbbmnhpf/bottom_icon_next.png'/>
+    </a>
+  </div>
+  
+</body>
+<script type="text/javascript" src="data.js"></script>
+</html>
+

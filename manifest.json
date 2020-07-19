@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "Taiwan surf forecast",
+  "description": "This page displays the forecast of swell height and temperature in a week.",
+  "version": "0.0.1",
+
+  "chrome_url_overrides":{
+    "newtab":"tab.html"
+  },
+
+  "browser_action": {
+    "default_icon": "surf-emoji.png"
+  },
+  "permissions": [
+  ]
+}
